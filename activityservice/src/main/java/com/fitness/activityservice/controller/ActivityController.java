@@ -18,7 +18,7 @@ public class ActivityController {
 
     @Autowired
     private ActivityService activityService;
-    @PostMapping("")
+    @PostMapping("/add-activity")
     public ResponseEntity<ActivityResponse> trackActivity(@RequestBody ActivityRequest request) {
         return ResponseEntity.ok(activityService.trackActivity(request));
     }
