@@ -4,8 +4,8 @@ spring:
 
   data:
     mongodb:
-      uri: ${MONGO_URI:mongodb://localhost:27017}
-      database: ${MONGO_DB_NAME:fitnessactivity}
+      uri: ${MONGO_URI}
+      database: ${MONGO_DB_NAME}
 
   eureka:
     client:
